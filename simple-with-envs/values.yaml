@@ -1,0 +1,14 @@
+image:
+  registry: docker.io
+  repository: tsiplenkov/flask-env
+  tag: "1"
+
+app:
+  name: flask-env
+  replicas: 1
+  ports:
+    - name: http
+      value: 5000
+  envs:
+    - name: PASS
+      value: xxx
